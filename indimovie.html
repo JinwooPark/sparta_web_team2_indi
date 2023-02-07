@@ -1,0 +1,1771 @@
+<html><head>
+  <meta charset="utf-8">
+  <title>디트릭스</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="title" content="디트릭스 영화예매, 박스오피스, 독립예술영화, 영화관정보, 이벤트, 매거진 제공">
+  <meta name="description" content="일반영화 및 독립예술영화 예매, 다양한 영화와 영화관 소식을 디트릭스에서 만나보세요.">
+  <meta property="og:title" content="디트릭스 영화예매, 박스오피스, 독립예술영화, 영화관정보, 이벤트, 매거진 제공">
+  <meta property="og:description" content="일반영화 및 독립예술영화 예매, 다양한 영화와 영화관 소식을 디트릭스에서 만나보세요.">
+  <link rel="stylesheet" type="text/css" href="/resources/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="/resources/css/front.css?v=1675253614274">
+  <script type="text/javascript" src="/resources/js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="/resources/js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="/resources/js/jquery.number.min.js"></script>
+  <script type="text/javascript" src="/resources/js/jquery.cookie.min.js"></script>
+  <script type="text/javascript" src="/resources/js/scrollbar.js"></script>
+  <script type="text/javascript" src="/resources/js/swiper.min.js"></script>
+  <script type="text/javascript" src="/resources/js/front.js?v=1675253614274"></script>
+  <script type="text/javascript" src="/resources/js/app.js?v=1675253614274"></script>
+  <script type="text/javascript">
+     "FE8EF4D2-F22D-4802-A39A-D58F23A29C1E"!=sessionStorage.getItem("cgid")&&sessionStorage.setItem("cgid","FE8EF4D2-F22D-4802-A39A-D58F23A29C1E");
+     ""!=sessionStorage.getItem("hold")&&sessionStorage.setItem("hold","");
+     (""!=sessionStorage.getItem("ssid")||""!=sessionStorage.getItem("tokn"))&&(sessionStorage.setItem("ssid",""),sessionStorage.setItem("tokn",""),goLink(location.pathname,location.search.replace(/[?&](cgid|ssid|tokn)=([^&#]*)/g, "").substr(1)));
+  </script>
+</head>
+<body>
+  <div id="header" class="pc">
+     <div class="inner">
+        <h1><a href="javascript:goLink('/main.do');">dtryx</a></h1>
+        <div class="menus">
+           <div id="gnb">
+              <nav>
+                 <ul>
+                    <li><a href="javascript:goLink('/reserve/movie.do');"><span>예매</span></a></li>
+                    <li class="active"><a href="javascript:goLink('/movie/list.do');"><span>영화</span></a></li>
+                    <li><a href="javascript:goLink('/cinema/list.do');"><span>영화관</span></a></li>
+                    <li><a href="javascript:goLink('/support/guide.do');"><span>고객지원</span></a></li>
+                    <li><a href="javascript:goLink('/mypage/tran_now.do');"><span>마이페이지</span></a></li>
+                 </ul>
+              </nav>
+           </div>
+
+           <div class="etc">
+              <a href="javascript:goLink('/member/login.do');">로그인</a>
+                 <a href="javascript:goLink('/member/join.do');">회원가입</a>
+              </div>
+           <a href="javascript:goLink('/reserve/movie.do');" class="btn-reser">빠른예매</a>
+        </div>
+
+        </div>
+  </div>
+
+  <div id="m-header" class="mobile">
+     <div class="inner">
+        <h2>영화</h2>
+        <a href="javascript:goLink('/main.do');" class="btn-prev"></a>
+     </div>
+  </div>
+
+  <div class="content">
+     <div class="inner">
+        <div class="tabs1 type2">
+           <a href="javascript:goLink('/movie/list.do', 'Tab=normal');" class="">일반영화</a>
+           <a href="javascript:goLink('/movie/list.do', 'Tab=indieart');" class="active">독립·예술영화</a>
+
+           <div class="search">
+              <input type="text" id="srchMovie" class="inp-mv" placeholder="영화명을 입력해주세요.">
+              <button class="btn-del" style="display: none;">삭제</button>
+              <button class="btn-srch">검색</button>
+           </div>
+        </div>
+        <div class="sorting">
+           <a href="javascript:goLink('/movie/list.do', 'Tab=indieart&amp;Sort=boxoffice');" class="active">예매순</a>
+           <a href="javascript:goLink('/movie/list.do', 'Tab=indieart&amp;Sort=name');" class="">가나다순</a>
+        </div>
+
+        <div class="movie-list slider-type1">
+           <ul>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021728');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/9E4D4FF5-3C3D-407C-8D44-5EB30AD99CDC.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">애프터썬</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>19.59%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>101분</span>
+                                <span>2023.02.01 개봉</span>
+                             </div>
+                             <div class="actor">폴 메스칼, 프랭키 코리오</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021728');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021728');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021663');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/D21D082F-1EF4-43C5-8B93-5BE59740F83A.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">이마 베프</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>8.33%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>코미디,드라마</span>
+                                <span>99분</span>
+                                <span>2023.02.01 개봉</span>
+                             </div>
+                             <div class="actor">장만옥,장 피에르 레오,나탈리 리차드</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021663');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021663');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=020777');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/48DD84AD-DB5C-439B-9CEF-011C8204A85C.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">400번의 구타</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>8.08%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>100분</span>
+                                <span>2016.04.13 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 장 피에르 레오(앙뜨완느 도이넬),클레르 모리에(질베르 도이넬, 앙뜨완느의 어머니)</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=020777');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=020777');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021406');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/842D322A-61AE-4442-B620-8FAC5F9F9594.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age19"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">단순한 열정</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>4.87%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>99분</span>
+                                <span>2023.11.01 개봉</span>
+                             </div>
+                             <div class="actor">라에티샤 도슈,세르게이 폴루닌</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021406');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021406');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=020739');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/A26DA1E2-AA30-4A25-8F7F-4E70C16B87F5.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">에브리씽 에브리웨어 올 앳 원스</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>4.09%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>액션,코미디</span>
+                                <span>139분</span>
+                                <span>2022.10.12 개봉</span>
+                             </div>
+                             <div class="actor">양자경,스테파니 수,키 호이 콴,제이미 리 커티스</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=020739');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=020739');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=020497');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/08/8F596C7C-6042-420D-AECF-FC8343F8E3C8.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">여름날 우리</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>2.17%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>코미디,로맨스</span>
+                                <span>115분</span>
+                                <span>2021.08.25 개봉</span>
+                             </div>
+                             <div class="actor">허광한,장약남</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=020497');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=020497');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021401');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/421664C5-055B-42BB-9F6A-E27D2A1A2918.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">안녕, 소중한 사람</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>1.99%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>123분</span>
+                                <span>2023.02.08 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 비키 크립스(엘렌),가스파르 울리엘(마티유)</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021401');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021401');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021680');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/A42728D0-84DF-485B-BF9D-B54DF028C4FA.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="ageall"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">엄마의 땅: 그리샤와 숲의 주인</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>1.21%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>애니메이션</span>
+                                <span>69분</span>
+                                <span>2023.01.25 개봉</span>
+                             </div>
+                             <div class="actor"></div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021680');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021680');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021683');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/AA3E7818-4864-4283-A51D-E9E7A0DE1C8E.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">하나 그리고 둘</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>1.10%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마,가족</span>
+                                <span>173분</span>
+                                <span>2000.06.28 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 오념진(NJ),금연령(민민),켈리 리(팅팅),조나단 창(양양),이세이 오가타(오타),진희성(아디)</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021683');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021683');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021700');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/9C9B839C-27C5-4F7B-A053-F871DF723598.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">쥴 앤 짐</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>1.03%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마,로맨스</span>
+                                <span>105분</span>
+                                <span>1997.01.04 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 오스카 베르너,앙리 세르</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021700');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021700');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021354');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/11/06703883-9B7E-402F-B356-B1C407101055.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">페르시아어 수업</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.99%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>128분</span>
+                                <span>2022.12.15 개봉</span>
+                             </div>
+                             <div class="actor">나우엘 페레즈 비스카야트,라르스 아이딩어</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021354');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021354');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=020669');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/24EEB5A4-8275-4680-ACB2-8C0B4230FAC4.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">북북서로 진로를 돌려라</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.88%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>어드밴처,미스터리,로맨스</span>
+                                <span>136분</span>
+                                <span>1959.01.01 개봉</span>
+                             </div>
+                             <div class="actor">캐리 그랜트(로저 O. 쏜힐),에바 마리 세인트(이브 켄덜)</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=020669');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=020669');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=019181');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/03/21F92876-1D76-4D3E-A09D-BCC5297EC9E8.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">드라이브 마이 카</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.84%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>179분</span>
+                                <span>2021.12.23 개봉</span>
+                             </div>
+                             <div class="actor">니시지마 히데토시,미우라 토코</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=019181');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=019181');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=020778');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/09/3FBA2E01-ED96-464A-B352-2704B7522E74.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age19"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">싸이코</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.81%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>공포(호러),미스터리</span>
+                                <span>109분</span>
+                                <span>2022.10.01 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 안소니 퍼킨스,베라 마일즈,존 개빈 [조연] 마틴 발삼,존 맥킨타이어,사이먼 오클랜드,본 테일러,프랭크 알버트슨,루렌 터틀,패트리샤 히치콕,존 앤더슨,자넷 리</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=020778');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=020778');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021364');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/12/39B02777-1AFD-42A6-A002-FDECBA232291.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">메모리아</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.77%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>136분</span>
+                                <span>2022.12.29 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 틸다 스윈튼,잔느 발리바</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021364');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021364');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021630');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/12/D6FB1282-ADA7-4181-A83C-06CC06289B91.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="ageall"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">겨울 이야기</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.51%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>84분</span>
+                                <span>2023.01.18 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 신구,김지숙</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021630');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021630');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=019681');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/04/B0677C62-292E-45E2-BFA8-C24775A9EFEA.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="ageall"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">시네마 천국</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.47%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마,로맨스</span>
+                                <span>124분</span>
+                                <span>1990.07.07 개봉</span>
+                             </div>
+                             <div class="actor">자끄 페렝, 필립 느와레, 살바토레 카시오, 마르코 레오나르디</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=019681');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=019681');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=019772');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/05/5433D630-28D1-4907-96A8-AACD12AF11C4.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="ageall"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">애프터 양</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.47%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마,SF</span>
+                                <span>96분</span>
+                                <span>2022.06.01 개봉</span>
+                             </div>
+                             <div class="actor">콜린 파렐</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=019772');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=019772');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021104');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/10/B66F4B97-0988-4E20-A3F3-F508891D3D1B.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">탑</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.36%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>97분</span>
+                                <span>2022.11.03 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 권해효,이혜영,송선미,조윤희,박미소,신석호</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021104');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021104');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=020961');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/0ECA04A8-5B01-4429-A268-F9AD3E5B8F8A.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">가가린</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.33%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>SF</span>
+                                <span>98분</span>
+                                <span>2022.12.22 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 피네건 올드필드,드니 라방,알세니 바틸리,리나 쿠드리</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=020961');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=020961');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021520');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/12/4EA1F214-6950-4A2F-82AC-0D89AB1180E7.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">3000년의 기다림</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.33%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마,판타지,로맨스</span>
+                                <span>108분</span>
+                                <span>2023.01.04 개봉</span>
+                             </div>
+                             <div class="actor">틸다 스윈튼,이드리스 엘바</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021520');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021520');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021404');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/E39BD285-CE40-4A03-B61C-87EE921557DE.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">라인</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.29%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마,가족</span>
+                                <span>103분</span>
+                                <span>2023.01.25 개봉</span>
+                             </div>
+                             <div class="actor">발레리아 브루니 테데스키</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021404');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021404');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021684');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/7E0A84ED-69F7-45E3-A375-AF090F8D9E7A.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">고령가 소년 살인사건</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.25%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>237분</span>
+                                <span>2017.11.23 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 장첸(시아오),왕 주안,금연령,장 구주</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021684');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021684');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021740');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/DE7B02E8-5D5C-47CC-9715-65C05E86EBCD.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">관계의 일변</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.22%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>95분</span>
+                                <span>2023.02.01 개봉</span>
+                             </div>
+                             <div class="actor"></div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021740');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021740');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021319');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/11/705ED95F-39B9-43AF-84E6-479BEE7F883C.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">양자경의 더 모든 날 모든 순간</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.22%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>액션,코미디</span>
+                                <span>150분</span>
+                                <span>2022.11.23 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 양자경,스테파니 수,키 호이 콴,제이미 리 커티스</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021319');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021319');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=019201');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/03/429E1668-DE81-4BF3-95A3-CAA805C2D4A8.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="ageall"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">러브레터</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.18%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마,로맨스</span>
+                                <span>116분</span>
+                                <span>1999.11.20 개봉</span>
+                             </div>
+                             <div class="actor">나까야마 미호,토요카와 에츠시</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=019201');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=019201');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=019595');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/04/8E2E607E-6847-4F6C-BB10-F35B1299BC5D.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">봄 이야기</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.18%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>코미디,드라마</span>
+                                <span>101분</span>
+                                <span>1990.01.01 개봉</span>
+                             </div>
+                             <div class="actor">앤 테이세드레, 위그 케스테</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=019595');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=019595');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=019596');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/04/A20B74A9-4306-48F2-8CE5-FA7363CCB58A.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">여름 이야기</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.18%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>114분</span>
+                                <span>1998.06.13 개봉</span>
+                             </div>
+                             <div class="actor">아만다 랑글렛,멜빌 푸포</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=019596');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=019596');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=019597');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/04/9ABD08A9-C126-401A-8FAD-9AC0F4882FAA.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">가을 이야기</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.14%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>로맨스</span>
+                                <span>110분</span>
+                                <span>1998.01.01 개봉</span>
+                             </div>
+                             <div class="actor">마리 리비에르, 베아트리스 로망</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=019597');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=019597');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021734');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/D3B6992D-1971-42BB-9835-3A78B4DDD36A.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">다음 소희</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.14%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>138분</span>
+                                <span>2023.02.08 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 김시은(소희),배두나 [조연] 박우영(동호),정수하(정인)</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021734');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021734');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021682');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/83CB08C2-98F2-4901-92F6-2CA6C3232FE4.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">타이페이 스토리</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.14%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>119분</span>
+                                <span>2019.11.07 개봉</span>
+                             </div>
+                             <div class="actor"></div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021682');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021682');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021685');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/23B5B12A-ECB0-4D91-A235-3D386FE34988.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">공포분자</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.11%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>108분</span>
+                                <span>2020.09.17 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 무건인(주울분),왕 안</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021685');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021685');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021407');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/8BC39C71-C8C6-49C4-B99C-FBA7863F70AF.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age19"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">성스러운 거미</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.11%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>범죄,스릴러</span>
+                                <span>118분</span>
+                                <span>2023.02.08 개봉</span>
+                             </div>
+                             <div class="actor">자흐 아미르-이브라히미,메흐디 바제스타니</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021407');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021407');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021443');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/12/F8F94184-223D-4212-8BF7-E8B01C7DD2A4.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="ageall"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">나는 마을 방과후 교사입니다</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.07%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>다큐멘터리</span>
+                                <span>94분</span>
+                                <span>2023.01.11 개봉</span>
+                             </div>
+                             <div class="actor"></div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021443');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021443');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021304');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/11/B6274237-6C1A-430E-AC77-FB4D9E45A1B7.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="ageall"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">머슴바울</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.07%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>사극,뮤지컬</span>
+                                <span>71분</span>
+                                <span>2022.11.24 개봉</span>
+                             </div>
+                             <div class="actor"></div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021304');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021304');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=020064');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/11/7FA182A0-5E0B-4C36-B23D-AA030B7F0C93.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">같은 속옷을 입는 두 여자</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.07%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>140분</span>
+                                <span>2022.11.10 개봉</span>
+                             </div>
+                             <div class="actor">임지호, 양말복</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=020064');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=020064');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=019199');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/06/EAAC0016-54B2-4087-AACA-D76F9F3CAC12.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">라라랜드</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.07%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마,뮤지컬,로맨스</span>
+                                <span>128분</span>
+                                <span>2016.12.07 개봉</span>
+                             </div>
+                             <div class="actor">엠마 스톤,라이언 고슬링,핀 위트록,J.K. 시몬스</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=019199');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=019199');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021699');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/20443656-BA73-46A6-A91B-6BEB4477F48F.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">열여덟, 어른이 되는 나이</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.07%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>88분</span>
+                                <span>2023.01.25 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 임선우,김명찬,이장유,박현숙</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021699');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021699');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021632');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/12/CDAD2D98-DECC-447C-852A-98C16C83247B.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">처음 꽃향기를 만난 순간</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.07%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마,로맨스</span>
+                                <span>103분</span>
+                                <span>2023.01.04 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 정여희,임진희,이역</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021632');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021632');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021618');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/73986552-89DE-4183-AEBC-B462E44AA131.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">시간을 꿈꾸는 소녀</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.03%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>다큐멘터리</span>
+                                <span>110분</span>
+                                <span>2023.01.11 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 권수진,이경원</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021618');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021618');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=019598');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/04/3055E74B-7C1F-4FEB-9D68-7398EA85B710.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">겨울 이야기</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.03%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>114분</span>
+                                <span>1992.01.01 개봉</span>
+                             </div>
+                             <div class="actor">샬롯 베리, 프레데릭 반 덴 드리슈</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=019598');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=019598');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021352');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/11/F145DBD2-047E-42A0-B500-53DA91CDE1E5.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">오늘 밤, 세계에서 이 사랑이 사라진다 해도</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.03%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>로맨스</span>
+                                <span>121분</span>
+                                <span>2022.11.30 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 미치에다 슌스케,후쿠모토 리코,후루카와 코토네,마츠모토 호노카</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021352');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021352');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021340');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/11/539ACF2C-3521-418F-8471-D0AE3391EF17.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">만인의 연인</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.00%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>130분</span>
+                                <span>2022.12.01 개봉</span>
+                             </div>
+                             <div class="actor">황보운,서영희,홍사빈,김민철</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021340');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021340');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021341');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/11/1A52CDD1-8AD0-437E-953B-363EA749346B.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">그 겨울, 나는</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.00%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>로맨스</span>
+                                <span>99분</span>
+                                <span>2022.11.30 개봉</span>
+                             </div>
+                             <div class="actor">권다함,권소현</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021341');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021341');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021490');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/12/D48131C0-1EFD-4B0F-AE8C-460F45C9A065.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">코르사주</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.00%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>114분</span>
+                                <span>2022.12.21 개봉</span>
+                             </div>
+                             <div class="actor"></div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021490');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021490');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021491');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/12/1C5B9135-DAAC-4A10-8B4E-E0DA9EF2B15D.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">라스트필름</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.00%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>100분</span>
+                                <span>2022.12.29 개봉</span>
+                             </div>
+                             <div class="actor">장현성,김진혁</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021491');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021491');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021501');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/12/8353A7F3-2EB2-4711-BB5F-76732FCCD9DD.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">희수</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.00%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>75분</span>
+                                <span>2021.01.01 개봉</span>
+                             </div>
+                             <div class="actor">공민정</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021501');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021501');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=019249');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/03/E4458CB9-083E-469A-8752-D47EDA08A33E.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">비브르 사 비</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.00%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>84분</span>
+                                <span>1997.05.03 개봉</span>
+                             </div>
+                             <div class="actor">안나 카리나,사디 레보트,안드레 S. 라바르트</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=019249');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=019249');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=019318');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/03/D9BAF76A-765F-4797-AEFB-01F381B69928.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">코다</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.00%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>111분</span>
+                                <span>2021.08.31 개봉</span>
+                             </div>
+                             <div class="actor">에밀리아 존스(루비),  퍼디아 월시-필로(마일스), 말리 매트린(재키) , 트로이 코처(프랭크), 다니엘 듀런트(레오), 에우헤니오 데르베스</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=019318');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=019318');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=019582');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/04/8A6DD4ED-AA60-49B7-9345-91322EE070BE.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">필름스타 인 리버풀</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.00%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마,로맨스</span>
+                                <span>105분</span>
+                                <span>2018.10.25 개봉</span>
+                             </div>
+                             <div class="actor">아네트 베닝, 제이미 벨</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=019582');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=019582');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=019593');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/04/57617D40-6729-405A-B1C0-95F815B8422F.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">해변의 폴린느</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.00%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마</span>
+                                <span>94분</span>
+                                <span>1983.01.01 개봉</span>
+                             </div>
+                             <div class="actor"></div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=019593');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=019593');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=019594');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/04/60A51125-7859-4C64-8442-7B440E83BFA4.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">녹색광선</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.00%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마,로맨스</span>
+                                <span>98분</span>
+                                <span>1986.01.01 개봉</span>
+                             </div>
+                             <div class="actor">마리 리비에르</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=019594');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=019594');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=020148');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/12/DCF6FEBA-CE3E-4042-BB2C-52EEB702C0AC.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">크레이지 컴페티션</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.00%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>코미디,드라마</span>
+                                <span>114분</span>
+                                <span>2022.07.01 개봉</span>
+                             </div>
+                             <div class="actor">페넬로페 크루즈,안토니오 반데라스</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=020148');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=020148');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=020179');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/07/5AE9BBC9-34AF-4AD1-B0B3-935B61F688FD.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">바이킹 (1958)</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.00%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>기타</span>
+                                <span>116분</span>
+                                <span>1958.01.01 개봉</span>
+                             </div>
+                             <div class="actor">어네스트 보그나인,토니 커티스,커크 더글라스</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=020179');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=020179');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021679');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2023/01/5358C43C-367A-4810-8A6B-3AFAD39C2570.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age15"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">미스터 노바디: 감독판</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.00%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>드라마,판타지</span>
+                                <span>156분</span>
+                                <span>2023.01.01 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 자레드 레토,다이앤 크루거</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021679');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021679');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021582');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/12/BBFCC595-227C-4733-854D-D68026558CE5.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="ageall"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">이태석</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.00%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>다큐멘터리</span>
+                                <span>82분</span>
+                                <span>2022.12.29 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 임형주(내레이션)</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021582');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021582');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021610');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/12/59CA8B71-1E70-490E-9334-5F48A00E0871.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">희망의 요소</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.00%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>로맨스</span>
+                                <span>83분</span>
+                                <span>2022.12.29 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 이승훈(남편),박서은(아내) [조연] 임영우(상간남),임정은(직장동료),김명준(하모니카 남),이원영(관리사무소 직원)</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021610');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021610');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              <li>
+                    <div class="item">
+                       <a href="javascript:goLink('/movie/view.do', 'MovieCd=021612');" class="thum">
+                          <div class="img">
+                             <img src="https://img.dtryx.com/poster/2022/12/D8FD7FE9-555F-4A8E-83E0-C4099983C290.small.jpg" onerror="this.src='/resources/img/common/no-poster.png';">
+                             <span class="target"><i class="age12"></i></span>
+                          </div>
+                          <div class="info">
+                             <div class="subj">패닉 런</div>
+                             <div class="grade">
+                                <span>예매율</span>
+                                <strong>0.00%</strong>
+                             </div>
+                             <div class="etc">
+                                <span>스릴러</span>
+                                <span>84분</span>
+                                <span>2023.01.04 개봉</span>
+                             </div>
+                             <div class="actor">[주연] 나오미 왓츠,제이슨 클락</div>
+                           </div>
+                        </a>
+                        <div class="btns">
+                          <a href="javascript:goLink('/movie/view.do', 'MovieCd=021612');" class="b1">영화정보</a>
+                          <a href="javascript:goLink('/reserve/movie.do', 'MovieCd=021612');" class="b2">예매하기</a>
+                        </div>
+                    </div>
+                 </li>
+              </ul>
+        </div>
+     </div>
+  </div>
+  <!-- // content -->
+
+  <script type="text/javascript">
+  $(function() {
+     $("#srchMovie").on("keyup", function(e) {
+        var txt = $(this).val().trim();
+        if (txt == "") {
+           $(".btn-del").hide();
+        } else {
+           $(".btn-del").show();
+        }
+
+        $(".movie-list li").each(function() {
+           if ($(this).find(".subj").text().indexOf(txt) != -1) {
+              $(this).show();
+           } else {
+              $(this).hide();
+           }
+        });
+     });
+
+     $(".btn-del").on("click", function() {
+        $("#srchMovie").val("").keyup();
+     });
+  });
+  </script><div id="footer">
+        <div class="inner">
+           <div class="head">
+              <div class="logo"><img src="/resources/img/common/foot_logo.png" alt="디트릭스"></div>
+              <div class="etc">
+                 <a href="https://intro.dtryx.com/kor/index.html" target="_blank">디트릭스 회사소개 </a>
+                 <a href="javascript:goLink('/info/service.do');">이용약관</a>
+                 <a href="javascript:goLink('/info/privacy.do');"><b>개인정보처리방침</b></a>
+              </div>
+           </div>
+        <div class="body">
+           <div class="btn-box">
+              <a href="#" class="btn-flip">디트릭스 사업자정보</a>
+           </div>
+           <div class="addr">
+              (13524) 경기도 성남시 분당구 판교역로 192 번길 16<br class="mobile">( 삼평동 , 판교타워 701 호<br>
+              대표자명 : 오문준<span class="pc"> |</span> <br class="mobile">사업자등록번호 : 257 88 00735 <span class="pc"> |</span> <br class="mobile"> 사업자명 : 주 디트릭스 <span class="pc"> |</span> <br class="mobile">통신판매업신고번호 : 2020 성남분당 B 0685<br>
+              www.dtryx.com <span class="pc"> |</span> <br class="mobile">031 8017 8332
+           </div>
+           <div class="copy">COPYRIGHT © Dtryx Inc. All rights reserved</div>
+        </div>
+     </div>
+     <!-- // footer -->
+
+     <div class="fixed-nav">
+        <div class="nav">
+           <a href="javascript:goLink('/main.do');" class="m1">
+              <i class="ic"></i>
+              <strong>홈</strong>
+           </a>
+           <a href="javascript:goLink('/movie/list.do');" class="m2 active">
+              <i class="ic"></i>
+              <strong>영화</strong>
+           </a>
+           <a href="javascript:goLink('/reserve/movie.do');" class="m3">
+              <i class="ic2"></i>
+              <strong>바로예매</strong>
+           </a>
+           <a href="javascript:goLink('/cinema/list.do');" class="m4">
+              <i class="ic"></i>
+              <strong>영화관</strong>
+           </a>
+           <a href="javascript:goLink('/mypage/tran_now.do');" class="m5">
+              <i class="ic"></i>
+              <strong>마이</strong>
+           </a>
+        </div>
+     </div>
+  <div class="modal" id="mAlert">
+     <div class="modal-dialog" style="max-width:340px">
+        <div class="modal-content">
+           <div class="modal-header">
+              <h4>알림</h4>
+              <button type="button" class="close-modal" onclick="$('#mAlert').modal({show:0});">닫기</button>
+           </div>
+           <div class="modal-body">
+              <div class="modal-txt">
+              </div>
+              <div class="modal-bottom text-right">
+                 <button type="button" class="btn-modal2 close-modal" onclick="$('#mAlert').modal({show:0});">확인</button>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+
+  <div class="modal" id="oAlert">
+     <div class="modal-dialog" style="width:340px">
+        <div class="modal-content">
+           <div class="modal-header">
+              <h4>알림</h4>
+              <button type="button" class="close-modal" onclick="closeModal('oAlert');">닫기</button>
+           </div>
+           <div class="modal-body">
+              <div class="modal-txt">
+              </div>
+              <div class="modal-bottom text-right">
+                 <button type="button" class="btn-modal2 close-modal" onclick="closeModal('oAlert');">확인</button>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+
+</div></body></html>
+
+
+
+<지연> : 3. 2번째페이지 영화 이미지 + 타이틀 + 평점 + 영화정보 노출 + 로고 제작, 위치
+
+
+<준수> : 4. 유튜브 영상 노출
+
+
+<진우> : 5. 인스타그램 이미지 노출 + 와이어프레임 수정
+
+
+<희정> : 6. 댓글 입력 (감상평 등) 
