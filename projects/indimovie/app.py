@@ -12,7 +12,7 @@ db = client.dbsparta
 def home():
    return render_template('index.html')
 
-@app.route("/indimovie", methods=["POST"])
+@app.route("/movie", methods=["POST"])
 def movie_post():
     url_receive = request.form['url_give']
     # star_receive = request.form['star_give']
