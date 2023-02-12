@@ -21,6 +21,24 @@
             font-family: 'Gowun Dodum', sans-serif;
         }
 
+        body {
+          background: #000;
+        }
+        body:before {
+          background: #009;
+          opacity: 0.7;
+        }
+
+        .modal {
+            width: 80%;
+            height: 80%;
+            background-color: white;
+            left: 10%;
+            top: 10%;
+            align-items: center;
+            padding: 5vh;
+        }
+
         .mytitle {
             width: 100%;
             height: 250px;
@@ -85,70 +103,6 @@
             margin-right: 10px;
         }
     </style>
-    <script>
-        $(document).ready(function(){
-          listing();
-        });
-        function listing() {
-            $('#cards-box').empty()
-            $.ajax({
-                type: 'GET',
-                url: '/movie',
-                data: {},
-                success: function (response) {
-                    let rows = response['movies']
-                    for(let i = 0; i < rows.length; i++) {
-                        let image = rows[i]['image']
-                        let title = rows[i]['title']
-                        let age = rows[i]['age']
-
-                        let temp_html = `<div class="col">
-                                            <div class="card h-100">
-                                                <img src="${image}"
-                                                     class="card-img-top">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">${title}</h5>
-                                                    <p class="card-age">${age}</p>
-                                                    <button onclick="detail()">Detail${i+1}</button>
-                                                </div>
-                                            </div>
-                                        </div>`
-
-                        $('#cards-box').append(temp_html)
-                    }
-                }
-            })
-        }
-        function posting() {
-            $.ajax({
-                type: 'POST',
-                url: '/movie',
-                data: {},
-                success: function (response) {
-                    alert(response['msg'])
-                    window.location.reload()
-                }
-            });
-        }
-        function detail(){
-            print('해당 버튼을 클릭해서 들어갑니다')
-            $.ajax({
-                type: 'GET',
-                url: '/movie',
-                data: {url_give:'https://www.dtryx.com/movie/list.do?cgid=FE8EF4D2-F22D-4802-A39A-D58F23A29C1E&Tab=indieart' },
-                success: function (response) {
-                    alert(response['msg'])
-                    window.location.reload()
-                }
-            });
-        }
-        function open_box(){
-            $('#post-box').show()
-        }
-        function close_box(){
-            $('#post-box').hide()
-        }
-    </script>
 </head>
 
 <body>
@@ -170,6 +124,87 @@
         </div>
     </div>
 </div>
+
+<div class="modal">
+  <div class="screen">
+    <div class="layerpop">
+        <h2 id="title"></h2>
+        <p id="actor"></p>
+
+      <button type="button" value="close" class="btn modal--close">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+        $(document).ready(function(){
+          listing();
+          $modal = $(".modal");
+           $(".modal--close").click(function(){
+                $modal.hide();
+            });
+        });
+        function listing() {
+            $('#cards-box').empty()
+            $.ajax({
+                type: 'GET',
+                url: '/movie',
+                data: {},
+                success: function (response) {
+                    let rows = response['movies']
+                    for(let i = 0; i < rows.length; i++) {
+                        let image = rows[i]['image']
+                        let title = rows[i]['title']
+                        let age = rows[i]['age']
+
+                        let temp_html = `<div class="col">
+                                            <div class="card h-100">
+                                                <img src="${image}"
+                                                     class="card-img-top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">${title}</h5>
+                                                    <p class="card-age">${age}</p>
+                                                    <button onclick="detail('${title}')">Detail${i+1}</button>
+                                                </div>
+                                            </div>
+                                        </div>`
+
+                        $('#cards-box').append(temp_html)
+                    }
+                }
+            })
+        }
+        function posting() {
+            $.ajax({
+                type: 'POST',
+                url: '/movie',
+                data: {'url_give' : 'https://www.dtryx.com/movie/list.do?cgid=FE8EF4D2-F22D-4802-A39A-D58F23A29C1E&Tab=indieart'},
+                success: function (response) {
+                    alert(response['msg'])
+                    window.location.reload()
+                }
+            });
+        }
+        function detail(movie_name){
+            $.ajax({
+                type: 'GET',
+                url: '/detail',
+                data: {title: movie_name},
+                success: function (response) {
+                    $("#actor").text(response.movies[0].actor)
+                    $("#title").text(response.movies[0].title)
+                    $(".modal").show();
+                }
+            });
+
+        }
+<!--        function open_box(){-->
+<!--            $('#post-box').show()-->
+<!--        }-->
+<!--        function close_box(){-->
+<!--            $('#post-box').hide()-->
+<!--        }-->
+</script>
 </body>
 
 </html>

@@ -57,22 +57,28 @@ def movie_get():
     movie_list = list(db.movies.find({}, {'_id':False}))
     return jsonify({'movies':movie_list})
 
-@app.route("/movie", methods=["GET"])
-def detail(id):
-    # DB 조회하도록 하는 로직 작성
-    # 예시: movie = db.collection.find_one({"_id": ObjectId(id)})
-    # DB 조회 결과를 detail.html에 전달
-    movie = db.collection.find_one({"_id": ObjectId(id)})
+@app.route("/detail", methods=["GET"])
+def detail_get():
+    title = request.args.get('title')
+    movie = list(db.movies.find({"title":title}, {'_id':False}))
+    return jsonify({'movies':movie})
 
-    return render_template("detail.html", movie=movie)
-
-@app.route("/")
-def index(id):
-    # DB 조회하도록 하는 로직 작성
-    # 예시: movies = db.collection.find({})
-    # DB 조회 결과를 detail.html에 전달
-    movies = db.collection.find({})
-    return render_template("index.html", movies=movies)
+# @app.route("/movie", methods=["GET"])
+# def detail(id):
+#     # DB 조회하도록 하는 로직 작성
+#     # 예시: movie = db.collection.find_one({"_id": ObjectId(id)})
+#     # DB 조회 결과를 detail.html에 전달
+#     movie = db.collection.find_one({"_id": ObjectId(id)})
+#
+#     return render_template("detail.html", movie=movie)
+#
+# @app.route("/")
+# def index(id):
+#     # DB 조회하도록 하는 로직 작성
+#     # 예시: movies = db.collection.find({})
+#     # DB 조회 결과를 detail.html에 전달
+#     movies = db.collection.find({})
+#     return render_template("index.html", movies=movies)
 
 
 if __name__ == '__main__':
